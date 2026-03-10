@@ -1,0 +1,4 @@
+module test-map-py (test)
+
+import map.test (test)
+import map-py

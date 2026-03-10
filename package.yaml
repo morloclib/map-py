@@ -1,0 +1,11 @@
+name: map-py
+version: 0.1.0
+homepage: https://github.com/morloclib/map-py
+synopsis: Python implementations for map operations
+description: Python implementations for map operations
+category: data
+license: MIT
+author: "Zebulun Arendsee"
+maintainer: "z@morloc.io"
+github: https://github.com/morloclib/map-py
+bug-reports: https://github.com/morloclib/map-py
