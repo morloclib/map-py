@@ -5,6 +5,7 @@ import root-py
 
 type Py => (Map a b) = "dict" a b
 
+%inline
 source Py from "map.py"
     ( "morloc_keys" as keys
     , "morloc_vals" as values
