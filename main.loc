@@ -20,7 +20,6 @@ source Py from "map.py"
     , "morloc_emptyMap" as emptyMap
     , "morloc_singleton" as singleton
     , "morloc_member" as member
-    , "morloc_size" as size
     , "morloc_union" as union
     , "morloc_unionWith" as unionWith
     , "morloc_intersectionWith" as intersectionWith
@@ -28,6 +27,10 @@ source Py from "map.py"
     , "morloc_mapWithKey" as mapWithKey
     , "morloc_foldWithKey" as foldWithKey
     )
+
+instance Sizeable (Map a b) where
+  source Py from "map.py" ("morloc_size" as size)
+
 
 instance Packable ([key],[val]) (Map key val) where
   source Py from "map.py"
