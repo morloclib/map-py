@@ -1,14 +1,10 @@
 # --- Pack/Unpack ---
 
 def morloc_packMap(xs):
-    d = dict()
-    ks, vs = xs
-    for (k, v) in zip(ks, vs):
-        d[k] = v
-    return d
+    return dict(xs)
 
 def morloc_unpackMap(d):
-    return [list(d.keys()), list(d.values())]
+    return list(d.items())
 
 # --- Construction ---
 
