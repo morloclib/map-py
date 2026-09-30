@@ -23,7 +23,8 @@ def morloc_to_list(m):
 # --- Query ---
 
 def morloc_lookup(key, m):
-    return m[key]
+    # `lookup :: a -> Map a b -> ?b`: an absent key is a null, not a raise.
+    return m.get(key)
 
 def morloc_member(key, m):
     return key in m
