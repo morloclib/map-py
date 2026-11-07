@@ -37,3 +37,9 @@ instance Packable [(key, val)] (Map key val) where
    ( "morloc_packMap" as pack
    , "morloc_unpackMap" as unpack
    )
+
+instance Packable [(Str, val)] (Map Str val) where
+  source Py from "map.py"
+   ( "morloc_packMap" as pack
+   , "morloc_unpackMap" as unpack
+   )
